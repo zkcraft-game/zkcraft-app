@@ -48,8 +48,8 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 
-charA = Character('Titan A', health = 100, attack = 30, speed = 50, armour = 20)
-charB = Character('Titan B', health = 120, attack = 25, speed = 40, armour = 25)
+charA = Character('Zombok A', health = 100, attack = 30, speed = 50, armour = 20)
+charB = Character('Zombok B', health = 120, attack = 25, speed = 40, armour = 25)
 
 battle_result = battle(charA, charB)
 
