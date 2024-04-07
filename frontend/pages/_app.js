@@ -9,6 +9,7 @@ import {
 	optimism,
 	arbitrum,
 	goerli,
+	sepolia,
 	polygonMumbai,
 	optimismGoerli,
 	arbitrumGoerli,
@@ -20,6 +21,7 @@ import MainLayout from "../layout/mainLayout";
 const { chains, provider } = configureChains(
 	[
 		mainnet,
+		sepolia,
 		goerli,
 		polygon,
 		polygonMumbai,
@@ -33,6 +35,7 @@ const { chains, provider } = configureChains(
 
 const { connectors } = getDefaultWallets({
 	appName: "My Alchemy DApp",
+	projectId: process.env.PROJECT_ID,
 	chains,
 });
 
