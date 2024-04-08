@@ -36,7 +36,7 @@ a {
   margin: 0;
 }
 
-.titancard {
+.zombokcard {
   background-color: rgba(31, 41, 55,0.5);
   border: rgb(31 41 55) 2px solid;
   border-radius: 5px;
@@ -72,12 +72,12 @@ ul {
   border-radius:0.3em;
 }
 
-.titanstats li {
+.zombokstats li {
   color: rgb(62, 182, 168);
   margin-bottom:5px;
 }
 
-.titanstats li span {
+.zombokstats li span {
   margin-left: 10px;
   font-size: 20px;
   color:white;
@@ -197,11 +197,11 @@ ul {
   /* padding:0; */
 }
 
-.titanimg {
+.zombokimg {
   max-width: 300px;
 }
 
-.titaneqpimg {
+.zombokeqpimg {
   max-width: 300px;
 }
 
