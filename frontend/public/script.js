@@ -92,6 +92,6 @@ class Character {
   
   (function (i) {
     setTimeout(function () {
-      document.location.href = "http://localhost:3000/post-battle";
+      document.location.href = "https://zombok-app.vercel.app/post-battle";
     }, (1000) * (l-1));
   })(1);
