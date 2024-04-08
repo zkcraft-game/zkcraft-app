@@ -16,7 +16,7 @@ More nitty-gritty: the NFTs representing the NPCs are dynamic such that when an 
 
 ## Demo Features ?
 
-The [Zombok Web App Demo]((https://zombok-app.vercel.app/battle)) consists of the following technologies:
+The [Zombok Web App Demo](https://zombok-app.vercel.app/battle) consists of the following technologies:
 
 - Next.js
 - Wagmi Hooks
@@ -26,7 +26,8 @@ The [Zombok Web App Demo]((https://zombok-app.vercel.app/battle)) consists of th
 
 ## Supported Chains
 
-The project supports all the major EVM chains:
+The project supports the listed chains:
 
  - Ethereum
  - Filecoin VM
+
