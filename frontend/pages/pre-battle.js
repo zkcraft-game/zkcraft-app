@@ -1,5 +1,5 @@
 import { useEffect, useState, React } from "react";
-import TitanCard from "../components/TitanCard";
+import ZombokCard from "../components/ZombokCard";
 import InventoryCard from "../components/InventoryCard";
 import BattleButton from "../components/BattleButton";
 import BattleStats from "../components/BattleStats";
@@ -120,10 +120,10 @@ export default function PreBattle() {
           {obsidianNFT.length &&
             obsidianNFT.map((nft) => {
               return (
-                <TitanCard
+                <ZombokCard
                   nft={nft}
                   owner={"0x2C20A4C68Dcd43F2e900291d12890475Ac485716"}
-                ></TitanCard>
+                ></ZombokCard>
               );
             })}
         </div>
@@ -131,10 +131,10 @@ export default function PreBattle() {
           {dragoonNFT.length &&
             dragoonNFT.map((nft) => {
               return (
-                <TitanCard
+                <ZombokCard
                   nft={nft}
                   owner={"0xe5B8D08437912aA22d6e153ca501FB5fc625b53b"}
-                ></TitanCard>
+                ></ZombokCard>
               );
             })}
         </div>
@@ -142,22 +142,22 @@ export default function PreBattle() {
           {aquacoilNFT.length &&
             aquacoilNFT.map((nft) => {
               return (
-                <TitanCard
+                <ZombokCard
                   nft={nft}
                   owner={"0x254bE1aCF8091598743daA98c31b749B96Cafc8f"}
-                ></TitanCard>
+                ></ZombokCard>
               );
             })}
         </div>
 
         {/* <div className="w-1/3 mx-2">
-          <TitanCard nft={obsidianNFT[0]} />
+          <ZombokCard nft={obsidianNFT[0]} />
         </div>
         <div className="w-1/3 mx-2">
-          <TitanCard nft={dragoonNFT[0]} />
+          <ZombokCard nft={dragoonNFT[0]} />
         </div>
         <div className="w-1/3 mx-2">
-          <TitanCard nft={aquacoilNFT[0]} />
+          <ZombokCard nft={aquacoilNFT[0]} />
         </div> */}
       </div>
       <div className="w-4/5 mt-8">
