@@ -1,6 +1,7 @@
 # Zombok
 
 Zombok lets you own one-of-a-kind fighters with special skills. These fighters grow and change as you play, creating a truly personal gaming experience!
+![image](frontend/public/zombokview.png)
 
 ## Gameplay
 
