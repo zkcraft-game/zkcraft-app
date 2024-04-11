@@ -2,7 +2,7 @@ const { TokenboundClient } = require("@tokenbound/sdk");
 const { ethers } = require("hardhat");
 require("dotenv").config();
 
-TOKEN_CONTRACT_ADDRESS = "0x184f5e01C8aCab8C40fC68a8B4c408b3e2d17bC7"; // TT
+TOKEN_CONTRACT_ADDRESS = "0xB5f051231832B15002838BB7e11db437771E5e61"; // ZOM
 PRIVATE_KEY = process.env.PRIVATE_KEY;
 ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
@@ -21,11 +21,11 @@ const main = async () => {
     tokenId: 1,
   });
 
-  console.log(tokenBoundAccount); //0x148065ae43beC6D4C9aA2a75EC5f282553c5a1c8
+  console.log(tokenBoundAccount); //0x027EaEa51DD9de494D9A82f3C8a7cB54967dA4D6
 
   // unequip function
   const executedCall = await tokenboundClient.executeCall({
-    account: "0x148065ae43beC6D4C9aA2a75EC5f282553c5a1c8", // TBA
+    account: "0x027EaEa51DD9de494D9A82f3C8a7cB54967dA4D6", // TBA
     to: "0x120cD09e06055D87a92A432e17D739351ee0168f", // NFT Shield address
     value: "0",
     data: "0x42842e0e000000000000000000000000148065ae43bec6d4c9aa2a75ec5f282553c5a1c8000000000000000000000000968e51108d076a7dce32472bfb3c288fcc35e8450000000000000000000000000000000000000000000000000000000000000002",
