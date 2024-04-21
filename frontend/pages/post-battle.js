@@ -32,7 +32,7 @@ const PostBattle = () => {
       <div className="flex justify-end absolute bottom-0 right-0 mr-16 mb-4">
         <button className="barracksbtn text-white font-bold py-4 px-8 rounded-lg text-xl shadow-md">
           <img src="/barracks-svgrepo-com.svg" alt='barracks'></img>
-          <a href="https://zombok-app.vercel.app/pre-battle">Go To Barracks</a>
+          <a href="https://zkcraft.vercel.app/pre-battle">Go To Barracks</a>
         </button>
       </div>
     </div>

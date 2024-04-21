@@ -4,7 +4,7 @@ import loadScript from '../hooks/loadScript';
 
 var loaded =false;
 const Battle = () => {
-  loadScript('https://zombok-app.vercel.app/script.js');
+  loadScript('https://zkcraft.vercel.app/script.js');
   return (
     <div className="flex justify-center items-start pt-20">
       <div className="w-1/3"></div> {/* Left-side whitespace */}
@@ -12,7 +12,7 @@ const Battle = () => {
       <div className="skip w-1/3 flex flex-col items-center justify-center">
         <p id="msg"></p>
         <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-          <a href="https://zombok-app.vercel.app/post-battle">Skip</a>
+          <a href="https://zkcraft.vercel.app/post-battle">Skip</a>
         </button>
       </div>{" "}
       {/* Button Section */}
