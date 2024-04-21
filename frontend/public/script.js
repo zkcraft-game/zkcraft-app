@@ -62,7 +62,6 @@ class Character {
   
   let charA = new Character('Olafi', 100, 30, 50, 20);
   let charB = new Character('Onchain Monkey', 100, 25, 40, 25);
-  let charB = new Character('Onchain MonKey', 100, 25, 40, 25);
   
   let battle_result = battle(charA, charB);
   
@@ -93,6 +92,6 @@ class Character {
   
   (function (i) {
     setTimeout(function () {
-      document.location.href = "https://zkcraft.vercel.app/post-battle";
+      document.location.href = "https://zombok-app.vercel.app/post-battle";
     }, (1000) * (l-1));
   })(1);
