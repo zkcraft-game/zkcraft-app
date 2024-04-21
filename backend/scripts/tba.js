@@ -2,13 +2,13 @@ const { TokenboundClient } = require("@tokenbound/sdk");
 const { ethers } = require("hardhat");
 require("dotenv").config();
 
-TOKEN_CONTRACT_ADDRESS = "0x184f5e01C8aCab8C40fC68a8B4c408b3e2d17bC7"; // TT
+TOKEN_CONTRACT_ADDRESS = "0xB5f051231832B15002838BB7e11db437771E5e61"; // ZOM
 PRIVATE_KEY = process.env.PRIVATE_KEY;
 ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
 const main = async () => {
   const provider = new ethers.providers.AlchemyProvider(
-    "goerli",
+    "calibrationnet",
     ALCHEMY_API_KEY
   );
   const signer = new ethers.Wallet(PRIVATE_KEY, provider);
@@ -21,7 +21,7 @@ const main = async () => {
     tokenId: 1,
   });
 
-  console.log(tokenBoundAccount); //0x148065ae43beC6D4C9aA2a75EC5f282553c5a1c8
+  console.log(tokenBoundAccount); //0x027EaEa51DD9de494D9A82f3C8a7cB54967dA4D6
 
   try {
     const createAccount = await tokenboundClient.createAccount({

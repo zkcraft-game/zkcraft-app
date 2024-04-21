@@ -2,19 +2,20 @@
 	"name": "Zombok",
 	"version": "0.1.0",
 	"private": true,
-	"scripts": { 
+	"scripts": {
 		"build": "npx hardhat compile",
-		"deploy": "npx hardhat run ./scripts/deploy.js --network ETH_MAINNET",
+		"deploy": "npx hardhat run ./scripts/deploy.js --network calibrationnet",
 		"node": "npx hardhat node",
 		"deploy-local": "npx hardhat run ./scripts/deploy.js --network localhost"
 	},
 	"dependencies": {
+		"@glif/filecoin-rpc-client": "^3.0.2",
 		"@openzeppelin/contracts": "^4.9.2",
 		"@tokenbound/sdk": "^0.3.0",
 		"dotenv": "^16.0.2"
 	},
 	"devDependencies": {
 		"@nomicfoundation/hardhat-toolbox": "^1.0.2",
-		"hardhat": "^2.10.1"
+		"hardhat": "^2.22.2"
 	}
 }
