@@ -1,6 +1,6 @@
-# Zombok
+# zkCraft
 
-Zombok lets you own one-of-a-kind fighters with special skills. These fighters grow and change as you play, creating a truly personal gaming experience!
+zkCraft lets you own one-of-a-kind fighters with special skills. These fighters grow and change as you play, creating a truly personal gaming experience!
 ![image](frontend/public/zombokview.png)
 
 ## Gameplay
@@ -16,7 +16,7 @@ More nitty-gritty: the NFTs representing the NPCs are dynamic such that when an 
 
 ## Demo Features ?
 
-The [Zombok Web App Demo](https://zombok-app.vercel.app/battle) consists of the following technologies:
+The [zkCraft Web App Demo](https://zkcraft.vercel.app/battle) consists of the following technologies:
 
 - Next.js
 - Wagmi Hooks
