@@ -6,7 +6,7 @@ export default function Navbar() {
 			<a href="https://zombok-app.vercel.app/" target={"_blank"}>
 				<img
 					className={styles.alchemy_logo}
-					src="/zombok.svg"
+					src="/zkCraft.svg"
 				></img>
 			</a>
 			<ConnectButton></ConnectButton>
