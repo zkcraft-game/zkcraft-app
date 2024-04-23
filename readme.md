@@ -28,6 +28,8 @@ The [zkCraft Web App Demo](https://zkcraft.vercel.app/battle) consists of the fo
 
 The project supports the listed chains:
 
- - Ethereum
- - Filecoin VM
+ - Ethereum Mainnet
+ - Arbitrum Sepolia
+ - NeonVM Testnet
+ - Filecoin VM Testnet
 
