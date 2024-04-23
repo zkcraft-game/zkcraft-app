@@ -7,14 +7,14 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 
-contract Zombok is ERC721URIStorage {
+contract zkCraft is ERC721URIStorage {
     using Strings for uint256;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
     mapping(uint256 => uint256) public tokenIdToLevels;
 
-    constructor() ERC721("Tokenbound Zombok", "ZOM") {}
+    constructor() ERC721("Tokenbound zkCraft", "CRT") {}
 
     function generateCharacter(uint256 tokenId) public returns (string memory) {
         bytes memory svg = abi.encodePacked(
@@ -47,7 +47,7 @@ contract Zombok is ERC721URIStorage {
     function getTokenURI(uint256 tokenId) public returns (string memory) {
         bytes memory dataURI = abi.encodePacked(
             "{",
-            '"name": "Zombok',
+            '"name": "zkCraft",
             tokenId.toString(),
             '",',
             '"description": "Tokenbound NPCs enabled by ERC-6551",',

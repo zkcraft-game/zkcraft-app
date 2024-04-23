@@ -14,7 +14,7 @@ module.exports = {
 		}
 	},
 	allowUnlimitedContractSize: true,
-	defaultNetwork: "calibrationnet",
+	defaultNetwork: "arbitrumsepolia",
 	networks: {
 		hardhat: {},
 		ETH_MAINNET: {
@@ -30,6 +30,11 @@ module.exports = {
             url: "https://api.calibration.node.glif.io/rpc/v1",
             accounts: [`${process.env.PRIVATE_KEY}`],
         },
+		arbitrumsepolia: {
+            chainId: 421614,
+			      accounts: [PRIVATE_KEY],
+			      url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
+		},
 		ETH_GOERLI: {
 			accounts: [`${process.env.PRIVATE_KEY}`],
 			url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
