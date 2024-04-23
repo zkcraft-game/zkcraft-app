@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/workspaces/zombok-app/backend/contracts/Zombok.sol": {
-      "lastModificationDate": 1712874068004,
+    "/workspace/zkcraft-app/backend/contracts/Zombok.sol": {
+      "lastModificationDate": 1713908277362,
       "contentHash": "3ff2c594276e0a38d10707b536b2cd27",
       "sourceName": "contracts/Zombok.sol",
       "solcConfig": {
@@ -44,46 +44,8 @@
         "Zombok"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
-      "lastModificationDate": 1712874932108,
-      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
-      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 1000,
-            "details": {
-              "yul": false
-            }
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Counters"
-      ]
-    },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
-      "lastModificationDate": 1712874932676,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1713910088425,
       "contentHash": "48686fc32a22a3754b8e63321857dd2a",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
@@ -123,8 +85,84 @@
         "Strings"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
-      "lastModificationDate": 1712874932388,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/Base64.sol": {
+      "lastModificationDate": 1713910088113,
+      "contentHash": "d4d2c855cfc1307cf7fab2a6e2272fd2",
+      "sourceName": "@openzeppelin/contracts/utils/Base64.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1713910088129,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1713910088261,
       "contentHash": "de368c6a87e159c86544ae5041b58cf3",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
       "solcConfig": {
@@ -164,46 +202,8 @@
         "ERC721URIStorage"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/Base64.sol": {
-      "lastModificationDate": 1712874932080,
-      "contentHash": "d4d2c855cfc1307cf7fab2a6e2272fd2",
-      "sourceName": "@openzeppelin/contracts/utils/Base64.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 1000,
-            "details": {
-              "yul": false
-            }
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Base64"
-      ]
-    },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
-      "lastModificationDate": 1712874932620,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1713910088393,
       "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
       "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
       "solcConfig": {
@@ -240,8 +240,8 @@
         "Math"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
-      "lastModificationDate": 1712874932664,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1713910088421,
       "contentHash": "9488ebd4daacfee8ad04811600d7d061",
       "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
       "solcConfig": {
@@ -278,8 +278,8 @@
         "SignedMath"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/interfaces/IERC4906.sol": {
-      "lastModificationDate": 1712874932564,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/interfaces/IERC4906.sol": {
+      "lastModificationDate": 1713910088345,
       "contentHash": "d3f355e15269d1476d86c84730cebb5e",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC4906.sol",
       "solcConfig": {
@@ -319,8 +319,8 @@
         "IERC4906"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
-      "lastModificationDate": 1712874932336,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1713910088241,
       "contentHash": "95602b04f0b53f1139f4668d123ddeb7",
       "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
       "solcConfig": {
@@ -365,8 +365,8 @@
         "ERC721"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/interfaces/IERC165.sol": {
-      "lastModificationDate": 1712874932524,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1713910088329,
       "contentHash": "ee9624272968c23d93d4c2e39f06e6e2",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC165.sol",
       "solcConfig": {
@@ -403,8 +403,8 @@
       ],
       "artifacts": []
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/interfaces/IERC721.sol": {
-      "lastModificationDate": 1712874932572,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/interfaces/IERC721.sol": {
+      "lastModificationDate": 1713910088349,
       "contentHash": "e6da7798a8c22c5043cc42d64a2a8f80",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC721.sol",
       "solcConfig": {
@@ -441,8 +441,8 @@
       ],
       "artifacts": []
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
-      "lastModificationDate": 1712874932528,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1713910088329,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
       "solcConfig": {
@@ -479,8 +479,8 @@
         "IERC165"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
-      "lastModificationDate": 1712874932572,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1713910088353,
       "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
       "solcConfig": {
@@ -519,8 +519,8 @@
         "IERC721"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1712874932072,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1713910088097,
       "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -557,8 +557,8 @@
         "Address"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1712874932108,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1713910088129,
       "contentHash": "f07feb4a44b1a4872370da5aa70e8e46",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -595,8 +595,8 @@
         "Context"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
-      "lastModificationDate": 1712874932220,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1713910088181,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
       "solcConfig": {
@@ -635,8 +635,8 @@
         "ERC165"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
-      "lastModificationDate": 1712874932580,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1713910088361,
       "contentHash": "c22d4395e33763de693fd440c6fd10e1",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
       "solcConfig": {
@@ -673,8 +673,8 @@
         "IERC721Receiver"
       ]
     },
-    "/workspaces/zombok-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
-      "lastModificationDate": 1712874932576,
+    "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1713910088357,
       "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
       "solcConfig": {
@@ -711,6 +711,49 @@
       ],
       "artifacts": [
         "IERC721Metadata"
+      ]
+    },
+    "/workspace/zkcraft-app/backend/contracts/zkCraft.sol": {
+      "lastModificationDate": 1713910489192,
+      "contentHash": "2332803215c7e989cacb657582d78e0a",
+      "sourceName": "contracts/zkCraft.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "@openzeppelin/contracts/utils/Counters.sol",
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@openzeppelin/contracts/utils/Base64.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "zkCraft"
       ]
     }
   }

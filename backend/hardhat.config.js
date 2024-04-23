@@ -31,9 +31,8 @@ module.exports = {
             accounts: [`${process.env.PRIVATE_KEY}`],
         },
 		arbitrumsepolia: {
-            chainId: 421614,
-			      accounts: [PRIVATE_KEY],
-			      url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
+			accounts: [`${process.env.PRIVATE_KEY}`],
+			url: `https://arb-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
 		},
 		ETH_GOERLI: {
 			accounts: [`${process.env.PRIVATE_KEY}`],

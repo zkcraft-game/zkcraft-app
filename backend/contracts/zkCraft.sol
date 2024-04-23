@@ -47,7 +47,7 @@ contract zkCraft is ERC721URIStorage {
     function getTokenURI(uint256 tokenId) public returns (string memory) {
         bytes memory dataURI = abi.encodePacked(
             "{",
-            '"name": "zkCraft",
+            '"name": "zkCraft',
             tokenId.toString(),
             '",',
             '"description": "Tokenbound NPCs enabled by ERC-6551",',
