@@ -14,7 +14,7 @@ module.exports = {
 		}
 	},
 	allowUnlimitedContractSize: true,
-	defaultNetwork: "arbitrumsepolia",
+	defaultNetwork: "neonevmdevnet",
 	networks: {
 		hardhat: {},
 		ETH_MAINNET: {
@@ -33,12 +33,22 @@ module.exports = {
 		arbitrumsepolia: {
 			accounts: [`${process.env.PRIVATE_KEY}`],
 			url: `https://arb-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
+		},		
+		neonevmdevnet: {
+			url: 'https://devnet.neonevm.org',
+            accounts: [`${process.env.PRIVATE_KEY}`],
+            chainId: 245022926,
+            allowUnlimitedContractSize: false,
+            gas: "auto",
+            gasPrice: "auto",
+            isFork: true
 		},
 		ETH_GOERLI: {
 			accounts: [`${process.env.PRIVATE_KEY}`],
 			url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
 		}
 	},
+
 	etherscan: {
 		apiKey: `${process.env.ETHERSCAN_API_KEY}`
 	},
