@@ -14,6 +14,10 @@ Victory in battles rewards players with the ability for their NPCs to level up, 
 The project used the new ERC-6551 implementation to associate a wallet with our ERC-721 NFTs. We used this to create NPCs in an idle battler environment with inventories which hold combat items. Specifically, an NPC can own other NFTs which represent such items. Furthermore, we implemented a betting system with an on-chain escrow chain such that a player can bet on victory before they are matched with an opponent. Again, it is the NPC which owns the relevant staked token in its inventory directly, not the player.
 More nitty-gritty: the NFTs representing the NPCs are dynamic such that when an NPC levels up its statistics change and its pictorial representation upgrades. We did this by pointing to different IPFS locations and associated it with different levels.
 
+## Contracts
+
+[Deployed zkCraft Contracts](https://github.com/zkcraft-game/contracts)
+
 ## Demo Features ?
 
 The [zkCraft Web App Demo](https://zkcraft.vercel.app/battle) consists of the following technologies:
