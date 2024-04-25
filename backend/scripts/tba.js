@@ -10,7 +10,7 @@ const main = async () => {
   const netObj = {
     // name: 'MATIC_MUMBAI',
     // name: 'polygon-mumbai',
-    name: 'arbitrumsepolia',
+    name: 'arbitrum',
     chainId: 421614  // hardwired bullshit
 }
 

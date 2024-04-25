@@ -1,20 +1,17 @@
 require('@nomicfoundation/hardhat-toolbox');
-require('dotenv').config()
+require('dotenv').config();
+require("@nomiclabs/hardhat-etherscan");
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY
 module.exports = {
 	solidity: {
 		version: "0.8.19",
 		settings: {
 			optimizer: {
 				enabled: true,
-				runs: 1000,
-				details: { yul: false },
 			}
 		}
 	},
 	allowUnlimitedContractSize: true,
-	defaultNetwork: "arbitrumsepolia",
 	networks: {
 		hardhat: {},
 		ETH_MAINNET: {
