@@ -38,8 +38,8 @@ export default function PreBattle() {
   const fetchNFTs = async (collection) => {
     let nfts;
     console.log("fetching nfts");
-    const api_key = "a_RQmx-7DTHA5eMyeLmZVHNgJ15KT3i_";
-    const baseURL = `https://eth-goerli.g.alchemy.com/v2/${api_key}/getNFTs/`;
+    const api_key = "AI119gwS5uko7ILBGXmiy-7tUnh36E-L";
+    const baseURL = `https://arb-sepolia.g.alchemy.com/v2/${api_key}/getNFTs/`;
     var requestOptions = {
       method: "GET",
     };
