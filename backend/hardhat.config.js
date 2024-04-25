@@ -14,7 +14,7 @@ module.exports = {
 		}
 	},
 	allowUnlimitedContractSize: true,
-	defaultNetwork: "neonevmdevnet",
+	defaultNetwork: "arbitrumsepolia",
 	networks: {
 		hardhat: {},
 		ETH_MAINNET: {

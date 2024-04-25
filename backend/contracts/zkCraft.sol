@@ -14,7 +14,7 @@ contract zkCraft is ERC721URIStorage {
 
     mapping(uint256 => uint256) public tokenIdToLevels;
 
-    constructor() ERC721("Tokenbound zkCraft", "CRT") {}
+    constructor() ERC721("Tokenbound zkCraft", "ZKT") {}
 
     function generateCharacter(uint256 tokenId) public returns (string memory) {
         bytes memory svg = abi.encodePacked(

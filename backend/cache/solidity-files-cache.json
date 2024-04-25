@@ -1,49 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/workspace/zkcraft-app/backend/contracts/Zombok.sol": {
-      "lastModificationDate": 1713908277362,
-      "contentHash": "3ff2c594276e0a38d10707b536b2cd27",
-      "sourceName": "contracts/Zombok.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 1000,
-            "details": {
-              "yul": false
-            }
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
-        "@openzeppelin/contracts/utils/Counters.sol",
-        "@openzeppelin/contracts/utils/Strings.sol",
-        "@openzeppelin/contracts/utils/Base64.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Zombok"
-      ]
-    },
     "/workspace/zkcraft-app/backend/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
       "lastModificationDate": 1713910088425,
       "contentHash": "48686fc32a22a3754b8e63321857dd2a",
@@ -714,8 +671,8 @@
       ]
     },
     "/workspace/zkcraft-app/backend/contracts/zkCraft.sol": {
-      "lastModificationDate": 1713910489192,
-      "contentHash": "2332803215c7e989cacb657582d78e0a",
+      "lastModificationDate": 1714070757572,
+      "contentHash": "06cea8ee73f57ff281a9c36e5adcc4b0",
       "sourceName": "contracts/zkCraft.sol",
       "solcConfig": {
         "version": "0.8.9",

@@ -2,18 +2,18 @@ const { TokenboundClient } = require("@tokenbound/sdk");
 const { ethers } = require("hardhat");
 require("dotenv").config();
 
-TOKEN_CONTRACT_ADDRESS = "0xB5f051231832B15002838BB7e11db437771E5e61"; // ZOM
+TOKEN_CONTRACT_ADDRESS = "0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3"; // ZKT
 PRIVATE_KEY = process.env.PRIVATE_KEY;
 ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
 const main = async () => {
   const provider = new ethers.providers.AlchemyProvider(
-    "calibrationnet",
+    "Arbitrum",
     ALCHEMY_API_KEY
   );
   const signer = new ethers.Wallet(PRIVATE_KEY, provider);
 
-  const tokenboundClient = new TokenboundClient({ signer, chainId: 5 });
+  const tokenboundClient = new TokenboundClient({ signer, chainId: 421614 });
 
   // Retrieve address of TBA (without creation)
   const tokenBoundAccount = tokenboundClient.getAccount({
@@ -21,7 +21,7 @@ const main = async () => {
     tokenId: 1,
   });
 
-  console.log(tokenBoundAccount); //0x027EaEa51DD9de494D9A82f3C8a7cB54967dA4D6
+  console.log(tokenBoundAccount); //0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3
 
   try {
     const createAccount = await tokenboundClient.createAccount({

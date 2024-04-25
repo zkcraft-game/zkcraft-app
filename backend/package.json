@@ -4,8 +4,8 @@
 	"private": true,
 	"scripts": {
 		"build": "npx hardhat compile",
-		"deploy": "npx hardhat run ./scripts/deploy.js --network neonevmdevnet",
-		"mint": "npx hardhat run ./scripts/mint.js --network neonevmdevnet",
+		"deploy": "npx hardhat run ./scripts/deploy.js --network arbitrumsepolia",
+		"mint": "npx hardhat run ./scripts/mint.js --network arbitrumsepolia",
 		"node": "npx hardhat node",
 		"deploy-local": "npx hardhat run ./scripts/deploy.js --network localhost"
 	},

@@ -2,7 +2,7 @@ const { TokenboundClient } = require("@tokenbound/sdk");
 const { ethers } = require("hardhat");
 require("dotenv").config();
 
-TOKEN_CONTRACT_ADDRESS = "0xB5f051231832B15002838BB7e11db437771E5e61"; // ZOM
+TOKEN_CONTRACT_ADDRESS = "0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3"; // ZOM
 PRIVATE_KEY = process.env.PRIVATE_KEY;
 ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
