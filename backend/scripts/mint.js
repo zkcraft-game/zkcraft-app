@@ -7,7 +7,7 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-    const zkCraftAddress = ''; // paste here your deployed smart contract address
+    const zkCraftAddress = '0xaF4D5B004aC06ec2a99764bfBeb318efcF9ccF5F'; // paste here your deployed smart contract address
     if (!ethers.isAddress(zkCraftAddress)) {
         console.log('Invalid zkCraftERC721Address');
         return false;
@@ -15,12 +15,12 @@ async function main() {
 
     const tokenId = 2009; // this is a sample value, use proper ID for production
     const [owner] = await ethers.getSigners();
-    const zkCraft = await ethers.getContractAt('zkCraftERC721', zkCraftAddress);
+    const zkCraft = await ethers.getContractAt('zkCraft', zkCraftAddress);
     let tx = await zkCraft.safeMint(owner.address, tokenId);
     await tx.wait(3);
 
     console.log(
-        `zkCractERC721 NFT with tokenId ${tokenId} has been minted to ${await zkCraft.ownerOf(tokenId)}` 
+        `zkCraft NFT with tokenId ${tokenId} has been minted to ${await zkCraft.ownerOf(tokenId)}` 
     );
 }
 

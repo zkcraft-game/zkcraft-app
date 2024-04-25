@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "npx hardhat compile",
 		"deploy": "npx hardhat run ./scripts/deploy.js --network neonevmdevnet",
+		"mint": "npx hardhat run ./scripts/mint.js --network neonevmdevnet",
 		"node": "npx hardhat node",
 		"deploy-local": "npx hardhat run ./scripts/deploy.js --network localhost"
 	},
