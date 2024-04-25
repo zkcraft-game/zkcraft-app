@@ -1,41 +1,39 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
-const { TokenboundClient } = require("@tokenbound/sdk");
-const { ethers } = require("hardhat");
-require("dotenv").config();
+require('dotenv').config();
+const ethers = require('ethers');
 
-TOKEN_CONTRACT_ADDRESS = "0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3"; // ZKT
-PRIVATE_KEY = process.env.PRIVATE_KEY;
-ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
+// Get Alchemy App URL
+const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
-async function main() {
-    
-    const provider = new ethers.providers.AlchemyProvider(
-        "arbitrumsepolia",
-        ALCHEMY_API_KEY
-      );
-    const signer = new ethers.Wallet(PRIVATE_KEY, provider);
+// Define an Alchemy Provider
+const provider = new ethers.providers.AlchemyProvider('arbitrumsepolia', ALCHEMY_API_KEY)
 
-    const tokenboundClient = new TokenboundClient({ signer, chainId: 5 });
+// Get contract ABI file
+const contract = require("../artifacts/contracts/zkCraft.sol/zkCraft.json");
 
-    const tokenId = 1; // this is a sample value, use proper ID for production
-    const [owner] = await ethers.getSigners();
-    const zkCraft = await ethers.getContractAt('zkCraft', zkCraftAddress);
-    let tx = await zkCraft.safeMint(owner.address, tokenId);
-    await tx.wait(3);
+// Create a signer
+const privateKey = process.env.PRIVATE_KEY
+const signer = new ethers.Wallet(privateKey, provider)
 
-    console.log(
-        `zkCraft NFT with tokenId ${tokenId} has been minted to ${await zkCraft.ownerOf(tokenId)}` 
-    );
+// Get contract ABI and address
+const abi = contract.abi
+const contractAddress = '0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3'
+
+// Create a contract instance
+const zkCraft = new ethers.Contract(contractAddress, abi, signer)
+
+// Get the NFT Metadata IPFS URL
+const tokenUri = "https://gateway.pinata.cloud/ipfs/QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP"
+
+// Call mintNFT function
+const mintNFT = async () => {
+    let nftTxn = await zkCraft.mintNFT(signer.address, tokenUri)
+    await nftTxn.wait()
+    console.log(`NFT Minted! Check it out at: https://sepolia.etherscan.io/tx/${nftTxn.hash}`)
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-    console.error(error);
-    process.exitCode = 1;
-});
+mintNFT()
+    .then(() => process.exit(0))
+    .catch((error) => {
+        console.error(error);
+        process.exit(1);
+    });

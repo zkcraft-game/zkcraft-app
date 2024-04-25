@@ -2,15 +2,19 @@ const { TokenboundClient } = require("@tokenbound/sdk");
 const { ethers } = require("hardhat");
 require("dotenv").config();
 
-TOKEN_CONTRACT_ADDRESS = "0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3"; // ZKT
+TOKEN_CONTRACT_ADDRESS = "0x6eFD4987B586F4Af5C129fB7499b611CE754e56f"; // ZKT
 PRIVATE_KEY = process.env.PRIVATE_KEY;
 ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
 const main = async () => {
-  const provider = new ethers.providers.AlchemyProvider(
-    "Arbitrum",
-    ALCHEMY_API_KEY
-  );
+  const netObj = {
+    // name: 'MATIC_MUMBAI',
+    // name: 'polygon-mumbai',
+    name: 'arbitrumsepolia',
+    chainId: 421614  // hardwired bullshit
+}
+
+const provider = new ethers.providers.AlchemyProvider(netObj, ALCHEMY_API_KEY);
   const signer = new ethers.Wallet(PRIVATE_KEY, provider);
 
   const tokenboundClient = new TokenboundClient({ signer, chainId: 421614 });
@@ -21,7 +25,7 @@ const main = async () => {
     tokenId: 1,
   });
 
-  console.log(tokenBoundAccount); //0xe585f7eCA52db1dd9C0ed1D65A7690A944868CC3
+  console.log(tokenBoundAccount); //0x6eFD4987B586F4Af5C129fB7499b611CE754e56f
 
   try {
     const createAccount = await tokenboundClient.createAccount({

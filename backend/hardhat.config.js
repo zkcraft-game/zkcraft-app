@@ -4,7 +4,7 @@ require('dotenv').config()
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 module.exports = {
 	solidity: {
-		version: "0.8.9",
+		version: "0.8.19",
 		settings: {
 			optimizer: {
 				enabled: true,
